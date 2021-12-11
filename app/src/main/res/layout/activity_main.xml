@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imagenProductos"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/esmalte" />
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="2dp"
+            android:layout_weight="2" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nombreProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:foregroundTint="#000000"
+                android:text="Esmaltes de uña" />
+
+            <TextView
+                android:id="@+id/descripcionProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Color: Rojo" />
+
+            <TextView
+                android:id="@+id/precioProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="$ 3.000" />
+
+            <EditText
+                android:id="@+id/editTextProductos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Ingrese texto aqui..."/>
+
+            <Button
+                android:id="@+id/btnProductos"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Productos" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_weight="2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imagenServicios"
+            android:layout_width="197dp"
+            android:layout_height="220dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/servicio" />
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="2dp"
+            android:layout_weight="2" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nombreServicios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:foregroundTint="#000000"
+                android:text="Manicure" />
+
+            <TextView
+                android:id="@+id/descripcionServicios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Para pies y manos" />
+
+            <TextView
+                android:id="@+id/precioServicios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="$ 20.000" />
+
+            <EditText
+                android:id="@+id/editTextServicios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Ingrese texto aqui..."/>
+
+
+            <Button
+                android:id="@+id/btnServicios"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Servicios" />
+        </LinearLayout>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_weight="2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="206dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ubicacion" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nombreSucursales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:foregroundTint="#000000"
+                android:freezesText="true"
+                android:text="Sucursal Belleza" />
+
+            <TextView
+                android:id="@+id/horarioSucursales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Direccion: cra 15 # 12 -32" />
+
+            <TextView
+                android:id="@+id/direccionSucursales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Telefono: 5555555" />
+
+            <Button
+                android:id="@+id/btnSucursales"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_weight="1"
+                android:text="Sucursales" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
